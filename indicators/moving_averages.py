@@ -1,16 +1,14 @@
 import pandas as pd
 
 
-def sma(source: list, length: int, has_null: bool):
+def sma(source: list, length: int, has_null: bool = True):
     """
     * Calculate the Simple Moving Average (SMA) of a list of data.
-    * 
-    Parameters:
+    *  Parameters:
     * - source (list): The source data for the calculation.
     * - length (int): The range of each calculation
     * - has_null (bool): Decide if null entries should be included or not.
-    * 
-    Returns:
+    * Returns:
     * - list: The SMA of the source data.
     """
 
@@ -38,11 +36,10 @@ def sma(source: list, length: int, has_null: bool):
 def ema(source: list, length: int):
     """
     * The ema function returns the exponentially weighted moving average. 
-    *
-    Parameters:
+    * Parameters:
     * - source (list): The source data for the calculation.
     * - length (int): The range of each calculation.
-    Returns
+    * Returns
     * - list: Exponential Moving Average list
     """
 
@@ -56,17 +53,16 @@ def ema(source: list, length: int):
         # Based on the formula, EMA = alpha * source + (1 - alpha) * EMA[1]
         final_list.append(alpha * source_value + (1 - alpha) * final_list[pointer])
 
-    return final_list
+    return final_list[1:]
 
 
 def rma(source: list, length: int):
     """
     * It is the exponentially weighted moving average with alpha = 1 / length.
-    *
-    Parameters:
+    * Parameters:
     * - source (list): The source data for calculations.
     * - length (int): The range of each calculation.
-    Returns:
+    * Returns:
     * - list: Running moving average (RMA) list.
     """
     # RMA Alpha

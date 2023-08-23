@@ -3,11 +3,10 @@ from .moving_averages import rma
 def rsi(source: list, length: int):
     """
     * Relative strength index. It is calculated based on rma's of upward and downward change of x.
-    *
-    Parameters
+    * Parameters
     * - source (list): The source data which is calculated upon.
     * - length (int): The range of each calculation.
-    Returns
+    * Returns
     * - list: The Relative Strength Index (RSI) list.
     """
 

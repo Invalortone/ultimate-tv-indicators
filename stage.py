@@ -14,4 +14,4 @@ high_prices  = list(data_frame['high'])
 low_prices   = list(data_frame['low'])
 
 
-print(indicators.calculate_tdigm(close_prices))
+print(indicators.kama(close_prices))

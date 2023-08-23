@@ -5,13 +5,13 @@ in Python
 ### List of Indicators
 
 * [X] Simple Moving Average (SMA)
-* [ ] TDIGM
-* [ ] WaveTrend by LazyBear
-* [ ] Kaufman AMA
+* [X] TDIGM
+* [X] WaveTrend by LazyBear
+* [X] Kaufman AMA
 * [ ] Mayer
 * [ ] BaseLine
 * [ ] Sharpe Ratio
-* [ ] Double WaveTrend
+* [X] Double WaveTrend
 * [ ] X Pi Cycle by Iceberg
 * [ ] Spring with Tanning Lines by Iceberg
 * [ ] Gauchiann Channel (DW)
