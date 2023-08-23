@@ -12,7 +12,7 @@ in Python
 * [X] BaseLine
 * [X] Sharpe Ratio
 * [X] Double WaveTrend
-* [ ] X Pi Cycle by Iceberg
+* [X] X Pi Cycle by Iceberg
 * [ ] Spring with Tanning Lines by Iceberg
 * [ ] Gauchiann Channel (DW)
 * [ ] RMACD

@@ -1,4 +1,4 @@
-from .moving_averages import sma
+from .utils.moving_averages import sma
 
 def mayer(source: list, has_null: bool = True) -> list:
     """

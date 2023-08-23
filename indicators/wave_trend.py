@@ -1,4 +1,4 @@
-from .moving_averages import ema, sma
+from .utils.moving_averages import ema, sma
 
 def wavetrend(source_high: list, source_low: list, source_close: list, channel_length: int = 10, average_length: int = 21) -> tuple:
     """

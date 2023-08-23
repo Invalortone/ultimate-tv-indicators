@@ -1,5 +1,5 @@
-from .stdev import stdev
-from .moving_averages import sma
+from .utils.stdev import stdev
+from .utils.moving_averages import sma
 
 def sharpe(source_low: list, source_high: list, source_close: list, source_open: list, length: int = 252, dividend_yield: float = 0.000, risk_free_rate: float = 0.0004) -> tuple:
     """
