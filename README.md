@@ -13,9 +13,9 @@ in Python
 * [X] Sharpe Ratio
 * [X] Double WaveTrend
 * [X] X Pi Cycle by Iceberg
-* [ ] Spring with Tanning Lines by Iceberg
-* [ ] Gauchiann Channel (DW)
-* [ ] RMACD
+* [X] Spring with Tanning Lines by Iceberg
+* [X] Gauchiann Channel (DW)
+* [X] RMACD
 * [ ] DMI ADX
 * [X] Standard Deviation
 * [X] Average True Range

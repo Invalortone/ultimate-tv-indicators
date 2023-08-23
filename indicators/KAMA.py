@@ -1,3 +1,5 @@
+from .utils.change import calculate_change
+
 def sum(source, length):
     # Gets the total sums of a range of items.
     full_sums = []
@@ -13,20 +15,6 @@ def sum(source, length):
 
     return full_sums
 
-def calculateChange(source: list, length: int):
-    # Finds the change between the current source and the source length bars back.
-
-    change = []
-
-    for iter in range(len(source)):
-        
-        if iter >= length:
-            change.append(source[iter] - source[iter-length])
-        else:
-            change.append(0)
-
-    return change
-
 def kama(source: list, length: int = 13, fast_length: int = 10, slow_length: int = 26) -> list:
     """
     * Kaufman's Adaptive Moving Average, originally developed by Perry J. Kaufman, is used to identify the overall trend.
@@ -40,10 +28,10 @@ def kama(source: list, length: int = 13, fast_length: int = 10, slow_length: int
     """
 
     # Calculates the absolute momentum
-    momenta_list = [abs(change) for change in calculateChange(source, length)]
+    momenta_list = [abs(change) for change in calculate_change(source, length)]
 
     # Calculates the absolute volatility of the chart
-    volatilities_list = sum([abs(change) for change in calculateChange(source, 1)], length)
+    volatilities_list = sum([abs(change) for change in calculate_change(source, 1)], length)
 
     # Calculates the efficiency ratio which is simply momentum divided by volatility
     efficiency_ratioes = [momentum / (volatility if volatility != 0 else 1) for momentum, volatility in zip(momenta_list, volatilities_list)]
