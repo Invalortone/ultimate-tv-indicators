@@ -1,6 +1,6 @@
 from .moving_averages import rma
 
-def tr(source_high: list, source_low: list, source_close: list):
+def tr(source_high: list, source_low: list, source_close: list) -> list:
     """
     * Calulates the true range between the highes and the lows between the closes.
     * Parameters:
@@ -28,7 +28,7 @@ def tr(source_high: list, source_low: list, source_close: list):
     return final_list
 
 
-def atr(source_high: list, source_low: list, source_close: list, length: int):
+def atr(source_high: list, source_low: list, source_close: list, length: int) -> list:
     """
     * Calculates the Average true range (ATR) based on the RMA of the true range.
     * Parameters:

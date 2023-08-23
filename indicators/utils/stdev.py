@@ -16,7 +16,7 @@ def add(addend, addend_two):
     
     return res
 
-def stdev(source: list, length: int):
+def stdev(source: list, length: int) -> list:
     """
     * Calculates the standard deviation (STDEV) of the source data for each length bars.
     * Parameters:

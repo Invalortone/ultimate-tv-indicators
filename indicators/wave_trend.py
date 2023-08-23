@@ -1,6 +1,6 @@
-from .moving_averages import ema, sma
+from .utils.moving_averages import ema, sma
 
-def wavetrend(source_high: list, source_low: list, source_close: list, channel_length: int = 10, average_length: int = 21):
+def wavetrend(source_high: list, source_low: list, source_close: list, channel_length: int = 10, average_length: int = 21) -> tuple:
     """
     * Calculates the WaveTrend by LazyBear indicator which is a port of a famous TS/MT indicator.
     *
@@ -40,7 +40,7 @@ def wavetrend(source_high: list, source_low: list, source_close: list, channel_l
 
     return (green_wave, red_wave)
 
-def double_wavetrend(source_high: list, source_low: list, source_close: list, channel_length_fast: int = 15, average_length_fast: int = 11, channel_length_slow: int = 50, average_length_slow: int = 21):
+def double_wavetrend(source_high: list, source_low: list, source_close: list, channel_length_fast: int = 15, average_length_fast: int = 11, channel_length_slow: int = 50, average_length_slow: int = 21) -> tuple:
     """
     * Calculates the double wavetrend oscillator modified by Mynicknameislion on TradingView.
     *
@@ -56,6 +56,7 @@ def double_wavetrend(source_high: list, source_low: list, source_close: list, ch
     * - list: Fast Wave Trend data.
     * - list: Slow Wave Trend data.
     """
+    
     fast_wave = wavetrend(source_high, source_low, source_close, channel_length_fast, average_length_fast)[0]
     slow_wave = wavetrend(source_high, source_low, source_close, channel_length_slow, average_length_slow)[0]
 
