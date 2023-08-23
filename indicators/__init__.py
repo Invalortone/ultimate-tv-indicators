@@ -5,3 +5,6 @@ from .stdev import stdev
 from .TDIGM import calculate_tdigm
 from .KAMA import kama
 from .wave_trend import wavetrend, double_wavetrend
+from .mayer import mayer
+from .baseline import baseline
+from .sharpe_ratio import sharpe

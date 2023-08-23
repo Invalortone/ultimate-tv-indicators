@@ -14,4 +14,4 @@ high_prices  = list(data_frame['high'])
 low_prices   = list(data_frame['low'])
 
 
-print(indicators.kama(close_prices))
+print(indicators.sharpe(low_prices, high_prices, close_prices, open_prices)[0])

@@ -2,7 +2,7 @@ from .rsi import rsi
 from .stdev import stdev
 from .moving_averages import sma
 
-def calculate_tdigm(source: list, rsi_period: int = 21, band_length: int = 34, length_rsi_fast: int = 7, length_rsi_slow: int = 2):
+def calculate_tdigm(source: list, rsi_period: int = 21, band_length: int = 34, length_rsi_fast: int = 7, length_rsi_slow: int = 2) -> tuple:
     """
     * Calculates the Traders Dynamic Index made by Goldminds on Tradingview.
     * Parameters:

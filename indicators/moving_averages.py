@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def sma(source: list, length: int, has_null: bool = True):
+def sma(source: list, length: int, has_null: bool = True) -> list:
     """
     * Calculate the Simple Moving Average (SMA) of a list of data.
     *  Parameters:
@@ -33,7 +33,7 @@ def sma(source: list, length: int, has_null: bool = True):
     return (moving_averages_list if has_null else final_list)
 
 
-def ema(source: list, length: int):
+def ema(source: list, length: int) -> list:
     """
     * The ema function returns the exponentially weighted moving average. 
     * Parameters:
@@ -56,7 +56,7 @@ def ema(source: list, length: int):
     return final_list[1:]
 
 
-def rma(source: list, length: int):
+def rma(source: list, length: int) -> list:
     """
     * It is the exponentially weighted moving average with alpha = 1 / length.
     * Parameters:

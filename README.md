@@ -8,9 +8,9 @@ in Python
 * [X] TDIGM
 * [X] WaveTrend by LazyBear
 * [X] Kaufman AMA
-* [ ] Mayer
-* [ ] BaseLine
-* [ ] Sharpe Ratio
+* [X] Mayer
+* [X] BaseLine
+* [X] Sharpe Ratio
 * [X] Double WaveTrend
 * [ ] X Pi Cycle by Iceberg
 * [ ] Spring with Tanning Lines by Iceberg
