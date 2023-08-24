@@ -1,25 +1,5 @@
-# Ultimate Tradingview Indicators
+<h1 align="center">ultimate-tv-indicators</h1>
 
-in Python
+<h2 style="font-family:Times New Roman">Description</h2>
 
-### List of Indicators
-
-* [X] Simple Moving Average (SMA)
-* [X] TDIGM
-* [X] WaveTrend by LazyBear
-* [X] Kaufman AMA
-* [X] Mayer
-* [X] BaseLine
-* [X] Sharpe Ratio
-* [X] Double WaveTrend
-* [X] X Pi Cycle by Iceberg
-* [X] Spring with Tanning Lines by Iceberg
-* [X] Gauchiann Channel (DW)
-* [X] RMACD
-* [ ] DMI ADX
-* [X] Standard Deviation
-* [X] Average True Range
-* [X] True Range
-* [X] Running Moving Average (RMA)
-* [X] Exponential Moving Average (EMA)
-* [X] RSI
+<p style="text-indent: 30px;">This python package converts the Pinescript indicators into mathematical functions/procedures that take inputs of lists of floats that represent the close, open etc. and return each plotted line as a list of floats.</p>
