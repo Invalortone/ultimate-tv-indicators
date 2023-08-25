@@ -8,7 +8,6 @@ from .wave_trend import wavetrend, double_wavetrend
 from .mayer import mayer
 from .baseline import baseline
 from .sharpe_ratio import sharpe
-from .XPiCycle import Xpi_cycle
 from .spring import spring
 from .gaussian_channel import gaussian_channel
 from .r_macd import rmacd
