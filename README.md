@@ -21,7 +21,7 @@ pip install ultimate-tv-indicators
 Once installed, you can import the desired indicators into your Python code and use them as follows:
 
 ```python
-from ultimate_tv_indicators import <indicator_name>
+from indicators import <indicator_name>
 
 data = <indicator_name>(x, y, z) # Usually takes a list as input as the source/bars.
 
