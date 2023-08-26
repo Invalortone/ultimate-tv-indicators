@@ -34,7 +34,7 @@ print(data) # Returns a list or a tuple of lists depending on the indicator.
 Replace `<indicator_name>` with the name of the desired indicator. For example, if you want to use the Moving Average indicator:
 
 ```python
-from ultimate_tv_indicators import MovingAverage
+from indicators import sma
 
 # List of close prices.
 close_bars = [42.65, 27.29, 28.30, 20.93, 43.22, 53.47, 50.56, 57.2, 61.78, 65.234, 80.99]
